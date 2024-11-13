@@ -81,6 +81,21 @@ body {
     border: 1px solid black;
 }
 
+.iframe-container {
+    width: 100%; /* Adjust based on how much space you want */
+    max-width: 800px; /* Maximum width of the form */
+    overflow: hidden;
+    height: 80vh; /* Adjust height as necessary */
+    position: relative;
+}
+
+.iframe-container iframe {
+    width: 125%; /* Increase width based on scale factor */
+    height: 125%; /* Increase height based on scale factor */
+    transform: scale(0.8); /* Scale down to 80% of original size */
+    transform-origin: 0 0; /* Scale from top-left corner */
+}
+
 /* Download Button */
 .download-section {
     text-align: center;
