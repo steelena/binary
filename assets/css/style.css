@@ -73,8 +73,10 @@ body {
 
 /* Ensure the form container has a flexible height */
 .form-container {
-    width: 1300px; 
-    height: 1700px;
+    width: 100%;
+    min-width: 800px; 
+    height: 100vh;
+    max-height: 1375px;
     margin: 0 auto;
     border: 1px solid black;
 }
