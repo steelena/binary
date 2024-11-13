@@ -1,0 +1,102 @@
+/* Base Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    color: rgb(39, 39, 39);
+    font-size: 1.1em;
+    line-height: 1.6;
+    
+    background-image: url('../img/fullpage-background.jpg');
+}
+
+/* Header Styling */
+.site-header {
+    background-color: #b21409; /* Adjust red color to match Simbotics */
+    padding: 10px 0;
+    color: #fff;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Logo Styling */
+.logo img {
+    height: 100px; /* Adjust size as needed for emphasis */
+}
+
+/* Navigation Styling */
+.main-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 15px;
+}
+
+.main-nav a:hover {
+    color: #ccc;
+}
+
+
+/* Main Content Area */
+.main-content {
+    padding: 20px;
+    /* background: rgba(255, 255, 255, 0.85); Light background for readability */
+    /* background: url('..\img\fullpage-background.jpg') no-repeat center center fixed; */
+    /* background-size: cover; */
+    margin-top: 20px;
+    border-radius: 8px;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+/* Sponsorship, Donation, and Form Sections with 50% Transparency */
+.sponsorship-section, .donation-section, .form-section {
+    background-color: rgba(255, 255, 255, 0.8); /* 50% transparency */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.sponsorship-section h2, .donation-section h2, .form-section h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+/* Download Button */
+.download-section {
+    text-align: center;
+}
+
+.download-btn {
+    padding: 10px 20px;
+    background-color: #0073e6;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.download-btn:hover {
+    background-color: #005bb5;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    font-size: 0.9em;
+}
