@@ -74,11 +74,11 @@ body {
 /* Ensure the form container has a flexible height */
 .form-container {
     width: 100%;
-    min-height: 100vh; /* Set the container height to 100% of the viewport height */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
+    max-width: 800px; 
+    height: 100vh;
+    max-height: 1000px;
+    margin: 0 auto;
+    border: 1px solid black;
 }
 
 /* Download Button */
