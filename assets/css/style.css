@@ -103,8 +103,19 @@ body {
     display: none;
 }
 
+.pdf-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0073e6;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
 /* Button Styling */
-.form-btn, .download-btn {
+.form-btn {
     display: inline-block;
     padding: 10px 20px;
     background-color: #0073e6;
@@ -116,13 +127,8 @@ body {
     text-align: center;
 }
 
-.form-btn:hover, .download-btn:hover {
+.form-btn:hover, .pdf-btn:hover {
     background-color: #005bb5;
-}
-
-/* Download Section */
-.download-section {
-    text-align: center;
 }
 
 /* Footer Styling */
