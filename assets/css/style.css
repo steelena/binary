@@ -59,9 +59,7 @@ body {
 /* Form Container Styling */
 .form-container {
     width: 100%;
-    max-width: 1320px; 
-    height: 100vh;
-    max-height: 1375px;
+    height: 1675px;
     margin: 0 auto;
     border: 1px solid black;
     overflow: hidden;
