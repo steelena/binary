@@ -240,6 +240,10 @@ footer {
         padding: 15px;
     }
 
+    .sponsorship-link-section, .donation-link-section  {
+        width: 100%;
+    }
+
     .large-buttons-row {
         flex-direction: column;
         gap: 15px;
