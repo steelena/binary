@@ -10,13 +10,12 @@ body {
     color: rgb(39, 39, 39);
     font-size: 1.1em;
     line-height: 1.6;
-    
     background-image: url('../img/fullpage-background.jpg');
 }
 
 /* Header Styling */
 .site-header {
-    background-color: #b21409; /* Adjust red color to match Simbotics */
+    background-color: #b21409;
     padding: 10px 0;
     color: #fff;
 }
@@ -31,21 +30,8 @@ body {
 
 /* Logo Styling */
 .logo img {
-    height: 100px; /* Adjust size as needed for emphasis */
+    height: 100px;
 }
-
-/* Navigation Styling */
-.main-nav a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 5px 15px;
-}
-
-.main-nav a:hover {
-    color: #ccc;
-}
-
 
 /* Main Content Area */
 .main-content {
@@ -56,7 +42,7 @@ body {
     margin: 20px auto;
 }
 
-
+/* Section Styling */
 .sponsorship-section, .donation-section, .form-section {
     background-color: rgba(255, 255, 255, 0.8);
     padding: 20px;
@@ -65,40 +51,49 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-
 .sponsorship-section h2, .donation-section h2, .form-section h2 {
     font-size: 1.5em;
     margin-bottom: 10px;
 }
 
-/* Ensure the form container has a flexible height */
+/* Form Container Styling */
 .form-container {
     width: 100%;
-    max-width: 1320px; 
-    height: 100vh;
-    max-height: 1375px;
+    max-width: 1320px;
+    height: auto;
     margin: 0 auto;
     border: 1px solid black;
+    overflow: hidden;
 }
 
-/* Download Button */
-.download-section {
-    text-align: center;
+/* Mobile-specific form link styling */
+.mobile-form-link {
+    display: none;
 }
 
-.download-btn {
+/* Button Styling */
+.form-btn, .download-btn {
+    display: inline-block;
     padding: 10px 20px;
     background-color: #0073e6;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
 }
 
-.download-btn:hover {
+.form-btn:hover, .download-btn:hover {
     background-color: #005bb5;
 }
 
-/* Footer */
+/* Download Section */
+.download-section {
+    text-align: center;
+}
+
+/* Footer Styling */
 footer {
     background-color: #333;
     color: #fff;
@@ -106,4 +101,25 @@ footer {
     padding: 10px 0;
     margin-top: 20px;
     font-size: 0.9em;
+}
+
+/* Mobile View Adjustments */
+@media (max-width: 768px) {
+    .form-container {
+        display: none; /* Hide embedded form on mobile */
+    }
+
+    .mobile-form-link {
+        display: block; /* Show link to open form in new tab on mobile */
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    h2 {
+        font-size: 1.5em; /* Smaller font size for mobile */
+    }
+
+    .form-section, .container {
+        padding: 15px;
+    }
 }
