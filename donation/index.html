@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Donation - Simbotics</title>
+    <title>Donations - Simbotics</title>
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
@@ -12,10 +12,13 @@
     <header class="site-header">
         <div class="header-content container">
             <div class="logo">
-                <a href="https://sponsors.simbotics.org">
+                <a href="https://simbotics.org">
                     <img src="../assets/img/simbotics_logo.png" alt="Simbotics Logo">
                 </a>
             </div>
+
+            <a href="../assets/docs/sponsorship_booklet.pdf" target="_blank" class="pdf-btn">View Sponsorship Info PDF</a>
+
             <nav class="main-nav">
                 <a href="https://sponsors.simbotics.org">Main Page</a>
             </nav>
@@ -24,16 +27,78 @@
 
     <!-- Main Content -->
     <main class="main-content container">
-        <section class="donation-section">
-            <h2>Make a Donation</h2>
+        <!-- Donation Opportunities Intro Section -->
+        <section class="section">
+            <h2>Donation Opportunities</h2>
             <p>Your donations provide essential resources for our team, helping students learn and grow in the field of robotics. Choose a method below to contribute.</p>
-            <h3>Ways to Donate</h3>
+        </section>
+
+        <!-- Through School Board Section -->
+        <section id="online" class="section">
+            <h3>Through School Board - School Cash Online</h3>
+            <p>You can reach the school donation page by clicking the image below:</p>
+
+            <!-- Clickable Image Link -->
+            <a href="https://dsbn.schoolcashonline.com/Fee/Details/4/92/false/true" target="_blank">
+                <img src="../assets/img/SchoolCashOnlineLogo.png" alt="School Cash Online Logo" class="section-image">
+            </a>
+
+            <p>The information needed for this form will be:</p>
             <ul>
-                <li><strong>E-transfer:</strong> Instructions for sending an e-transfer.</li>
-                <li><strong>Online Through Schoolboard:</strong> Visit our online donation portal.</li>
-                <li><strong>Cheque:</strong> Mail a cheque to our address.</li>
-                <li><strong>Cash:</strong> Contact us for in-person donations.</li>
+                <li><strong>The amount:</strong> Format the amount as:
+                    <ul>
+                        <li><code>1114.00</code></li>
+                        <li>Do not use symbols such as “$” or “,”</li>
+                    </ul>
+                </li>
+                <li>Under <strong>School</strong>, select “Governor Simcoe Secondary School”</li>
+                <li>Under <strong>Initiative</strong>, select “Program Specific Donation”</li>
             </ul>
+
+            <img src="../assets/img/SchoolCashOnlineGiftInfo.png" alt="School Cash Online Gift Information" class="section-image">
+
+            <p>Below, there is an option to leave a message. Please specify “For Robotics Team”</p>
+
+            <img src="../assets/img/SchoolCashOnlineMessage.png" alt="School Cash Online Message Example" class="section-image">
+
+            <p>As it mentions, it will automatically send you a donation receipt for your records.</p>
+            
+            <p>Upon clicking “Add To Cart”, you should see the following details:</p>
+            <ul>
+                <li>The correct school: <strong>Governor Simcoe Secondary School</strong></li>
+                <li>Initiative: <strong>Program Specific Donation</strong></li>
+                <li>The amount you entered</li>
+            </ul>
+
+            <img src="../assets/img/SchoolCashOnlineDoubleChecking.png" alt="School Cash Online Confirmation" class="section-image">
+
+            <p>After proceeding, you may either sign in or continue as a guest. For simplicity, we recommend continuing as a guest, but creating a profile is also an option for future donations. Complete the checkout by providing your details.</p>
+
+            <img src="../assets/img/SchoolCashOnlineCheckout.png" alt="School Cash Online Checkout" class="section-image">
+        </section>
+
+        <!-- Cheque Section -->
+        <section id="cheque" class="section">
+            <h3>Cheque</h3>
+            <p>When addressing a cheque, we accept the funding through the “District School Board of Niagara”</p>
+            <p>In the memo, make sure to write “For General Simcoe Robotics Team”</p>
+
+            <img src="../assets/img/DonationCheque.png" alt="Cheque Information" class="section-image">
+
+            <p>To deliver the cheque, we typically arrange for a student or mentor to coordinate collection. Alternatively, you may mail it to:</p>
+            <address>
+                Robotics<br>
+                Governor Simcoe Secondary School<br>
+                15 Glenview Avenue<br>
+                St Catharines, ON<br>
+                L2N 2Z7<br>
+            </address>
+        </section>
+
+        <!-- Cash Section -->
+        <section id="cash" class="section">
+            <h3>Cash</h3>
+            <p>All cash will be collected in person, either through the student or mentor involved, or you can reach out to us at <a href="mailto:info@simbotics.org">info@simbotics.org</a> to schedule a convenient time for collection.</p>
         </section>
     </main>
 
