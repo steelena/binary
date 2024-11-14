@@ -43,12 +43,45 @@ body {
 }
 
 /* Section Styling */
-.sponsorship-section, .donation-section, .form-section {
+.sponsorship-section, .donation-section, .form-section, .intro-section {
     background-color: rgba(255, 255, 255, 0.8);
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* General Section Styling */
+.section {
+    background-color: rgba(245, 245, 245, 0.9);
+    padding: 15px 20px; /* Add padding on both left and right to contain bullets */
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Ensure list bullets are inside the section */
+.section ul {
+    padding-left: 1.5em; /* Indent bullets inside the section */
+    list-style-position: inside; /* Aligns bullets with text */
+}
+
+.section ul ul {
+    padding-left: 1em; /* Adjust nested lists for clarity */
+}
+
+.section h3 {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+
+.section-image {
+    display: block;
+    margin: 15px auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
 .sponsorship-section h2, .donation-section h2, .form-section h2 {
@@ -102,6 +135,84 @@ footer {
     font-size: 0.9em;
 }
 
+/* Navigation Section */
+.navigation-section {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: rgba(245, 245, 245, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+.navigation-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Row for Sponsorship and Donation sections */
+.large-buttons-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Large Button Styling */
+.large-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #0073e6;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.large-btn:hover {
+    background-color: #005bb5;
+}
+
+/* Section styling for Sponsorship and Donation columns */
+.sponsorship-link-section, .donation-link-section {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 45%;
+    text-align: center;
+}
+
+/* Small Buttons */
+.small-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.small-btn {
+    display: block;
+    width: 80%;
+    max-width: 200px;
+    padding: 10px;
+    background-color: #ccc;
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.small-btn:hover {
+    background-color: #bbb;
+}
+
 /* Mobile View Adjustments */
 @media only screen and (max-device-width: 1300px) {
     .form-container {
@@ -120,5 +231,18 @@ footer {
 
     .form-section, .container {
         padding: 15px;
+    }
+
+    .large-buttons-row {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .sponsorship-section, .donation-section {
+        width: 100%;
+    }
+
+    .large-btn, .small-btn {
+        width: 100%;
     }
 }
