@@ -104,7 +104,7 @@ footer {
 }
 
 /* Mobile View Adjustments */
-@media (max-width: 768px) {
+@media only screen and (max-device-width: 1300px) {
     .form-container {
         display: none; /* Hide embedded form on mobile */
     }
